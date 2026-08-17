@@ -1,0 +1,16 @@
+[project]
+name = "AutoLeo"
+version = "0.1.0"
+description = "Batch importer for Lingualeo word sets through an already authorized Chrome session."
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.45.0",
+]
+
+[project.scripts]
+autoleo = "autoleo.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
